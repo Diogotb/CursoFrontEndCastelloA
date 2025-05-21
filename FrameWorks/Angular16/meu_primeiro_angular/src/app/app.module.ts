@@ -9,6 +9,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BannerComponent } from './template/banner/banner.component';
+import { FormsModule } from '@angular/forms';
+import { FormsComponent } from './pages/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { BannerComponent } from './template/banner/banner.component';
     HomeComponent,
     ProductsComponent,
     ContactComponent,
-    BannerComponent
+    BannerComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
