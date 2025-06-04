@@ -1,0 +1,33 @@
+{
+  "vagas": [
+    {
+      "id": "1",
+      "nome": "Desenvolvedor FrontEnd Jr.",
+      "foto": "foto1.jpg",
+      "descricao": "Trabalhar com HTML, CSS e JS",
+      "salario": 4000
+    },
+    {
+      "id": "2",
+      "nome": "Desenvolver BackEnd Pleno",
+      "foto": "foto1.jpg",
+      "descricao": "Trabalhar com Desenvolvimento Web",
+      "salario": 7000
+    },
+    {
+      "id": "3",
+      "nome": "Desenvolver Fullstack Senior",
+      "foto": "foto1.jpg",
+      "descricao": "Trabalhar com Desenvolvimento Web",
+      "salario": 10000
+    },
+    {
+      "id": 4,
+      "nome": "Engenheiro de Cloud",
+      "foto": "foto1.jpg",
+      "descricao": "Arquitetura de nuvens e serviços online",
+      "salario": 8000
+    }
+  ],
+  "curriculos": []
+}
