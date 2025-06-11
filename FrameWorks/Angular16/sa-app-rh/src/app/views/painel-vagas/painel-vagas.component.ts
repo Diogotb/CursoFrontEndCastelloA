@@ -7,7 +7,7 @@ import { VagaService } from 'src/app/services/vaga.service';
   templateUrl: './painel-vagas.component.html',
   styleUrls: ['./painel-vagas.component.scss']
 })
-export class PainelVagasComponent implements OnInit{
+export class PainelVagasComponent implements OnInit{ //controller -> view
 //fazer os controller para Vagas
   public vagas: Vaga[] = []; //armazena os dados da API
   public vaga: Vaga = new Vaga(0,"","","",0); //manipular no Formulário(inserir, modificar, deletar)
