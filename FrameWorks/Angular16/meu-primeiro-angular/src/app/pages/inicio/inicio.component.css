@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Comic Sans MS;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label{
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+input{
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    width: 300 px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+p{
+    font-size: 1.2em;
+    color: #555;
+}
+
+hr{
+    width: 100%;
+}

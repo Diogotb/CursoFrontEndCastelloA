@@ -1,59 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
-// criar comentários usando barra dupla
-
-//reset das configurações iniciais das tags
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: aliceblue;
+  background-color: #f2f2f2;
   color: #333;
   padding: 20px;
 }
 
-//container
 .container{
-  max-width: 1000px;
-  margin: 0 auto; //centralizar
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: white;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 h1, h2, h3 {
-  color: green;
+  color: #2b3a;
   margin-bottom: 12px;
 }
 
 button{
   padding: 8px 16px;
-  background-color: deepskyblue;
+  background-color: dodgerblue;
   border: none;
-  color: #ddd;
-  border-radius: 5px;
+  color: #fff;
+  border-radius: 4px;
   cursor: pointer;
+  margin: 2px;
+  width: 30%;
 
   &:hover{
-    background-color: dodgerblue;
+    background-color: #3674fc;
   }
 }
 
-input, select{
+input, select {
   padding: 8px;
   margin: 8px 0 16px 0;
-  width: 100%;
+  width: 80%;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 16px;
+
 }
 
 label{
-  font-size: 12px;
   font-weight: bold;
   display: block;
   margin-top: 12px;
@@ -62,6 +58,6 @@ label{
 hr{
   margin: 20px 0;
   border: none;
-  border-top: 1px solid #aaa;
+  border-top:  1px solid #ddd;
 }
 

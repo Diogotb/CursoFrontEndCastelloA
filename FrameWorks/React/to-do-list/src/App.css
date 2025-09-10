@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+body{
+  text-align: center;
+  font-family: Comic Sans MS;
+  background-color: aliceblue;
+}
+button{
+  margin-left: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: green;
+  color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+}
+=======
+/* estilização da aplicação principal */
+
+body {
+  font-family: Comic Sans MS;
+  background-color: #eee;
+  margin: 0;
+  padding: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+div {
+  text-align: center;
+  margin-top: 20px;
+}
+>>>>>>> 23cb32e74217dfd5f6db3ff72cd6d236b121beb2

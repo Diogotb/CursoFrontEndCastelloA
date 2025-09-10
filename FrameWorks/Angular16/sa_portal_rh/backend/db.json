@@ -1,0 +1,22 @@
+{
+  "vagas": [
+    {
+      "id": "abe1"
+    },
+    {
+      "id": 0,
+      "nome": "",
+      "foto": "",
+      "descricao": "",
+      "salario": 0
+    },
+    {
+      "id": 0,
+      "nome": "",
+      "foto": "",
+      "descricao": "",
+      "salario": 0
+    }
+  ],
+  "curriculos": []
+}
