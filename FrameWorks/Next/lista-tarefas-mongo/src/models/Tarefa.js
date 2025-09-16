@@ -11,15 +11,11 @@ const TarefaSchema = new mongoose.Schema({
   concluida: {
     type: Boolean,
     default: false, // O padrão é que a tarefa não está concluída
-  },
-  criadaEm: {
-    type: Date,
-    default: Date.now, // Registra automaticamente a data de criação
-  },
+  }
 });
 
 // Exporta o modelo. Se o modelo já existe (em caso de hot-reload), ele o reutiliza.
 // Caso contrário, cria um novo modelo 'Todo'.
-const Tarefa =  mongoose.models.Tarefa || mongoose.model("Tarefa", TarefaSchema);
+const Tarefa = mongoose.model("Tarefa", TarefaSchema) || mongoose.models.Tarefa;
 
 export default Tarefa;

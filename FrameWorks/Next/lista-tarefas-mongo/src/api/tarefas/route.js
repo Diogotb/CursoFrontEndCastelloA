@@ -6,17 +6,14 @@ import { NextResponse } from "next/server";
 
 //get
 export async function GET(){
-    try {
-        await connectMongo(); //connecta com o mongoDB
-        const tarefas = await Tarefa.find({}); //retorna as tarefas
-        //usando o médoto NextResponse=> fazer a requisições http
-        return NextResponse.json(tarefas, {status: 200});
-    } catch (error) {
-        return NextResponse.json(
-            {error: "Erro ao buscar as tarefas"},
-            {status: 500}
-        );
-    }
+  await connectMongo(); //connecta com o mongoDB
+  try {
+    const tarefas = await Tarefa.find({}); //retorna as tarefas
+    //usando o médoto NextResponse=> fazer a requisições http
+    return NextResponse.json({success: true, data: tarefas});
+  } catch (error) {
+    return NextResponse.json({ success: false }, { status: 400 });
+  }
 }
 
 //post
@@ -25,11 +22,8 @@ export async function POST(tarefa){
         await connectMongo();
         const data = await tarefa.json(); //transforma os dados em Json para enviar na requisição http
         const body = await Tarefa.create(data); //cria a tarefa no BD
-        return NextResponse.json(body, {status:201});
+        return NextResponse.json({success: true, data: body});
     } catch (error) {
-        return NextResponse.json(
-          { error: "Erro ao criar as tarefas" },
-          { status: 500 }
-        );
+        return NextResponse.json({ success: false }, { status: 400 });
     }
 }
